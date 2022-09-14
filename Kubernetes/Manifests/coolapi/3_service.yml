@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: "verycoolapi-service"
-    namespace: verycoolapi
+    name: "coolapi-service"
+    namespace: coolapi
     labels:
-        app: "verycoolapi"
+        app: "coolapi"
 spec:
     type: LoadBalancer
     ports:
@@ -13,4 +13,4 @@ spec:
       protocol: TCP
       name: http
     selector:
-        app: "verycoolapi"
+        app: "coolapi"

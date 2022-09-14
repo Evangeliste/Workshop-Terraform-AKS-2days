@@ -2,19 +2,19 @@ apiVersion : apps/v1
 kind: Deployment
 metadata:
   name: "coolapi-deployment"
-  namespace: verycoolapi
+  namespace: coolapi
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: "verycoolapi"
+      app: "coolapi"
   template:
     metadata:
       labels:
-        app: "verycoolapi"
+        app: "coolapi"
     spec:
       containers:
-        - name: "verycoolapi"
-          image: "acrace001.azurecr.io/verycoolapi:1.0.0"
+        - name: "coolapi"
+          image: "acrace001.azurecr.io/coolapi:1.0.0"
           ports:
           - containerPort: 3000
