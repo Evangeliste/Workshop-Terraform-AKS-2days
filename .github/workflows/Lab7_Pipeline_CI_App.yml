@@ -5,7 +5,7 @@ on:
 
 env: # variables 
   REGISTRY_NAME: "acrace001"
-  APP_NAME: "verycoolapi"
+  APP_NAME: "verycoolapi" ## LowerCase
   IMAGE_VERSION: "1.0.0"
 
 jobs: # 3 jobs qui s'enchaînent à la suite : 1 analyze-code - 2 test-unitaire - 3 build-scan-push
