@@ -1,7 +1,7 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "verycoolapi-deployment"
+  name: "coolapi-deployment"
   namespace: verycoolapi
 spec:
   replicas: 1
@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: "coolapi"
+        app: "verycoolapi"
     spec:
       containers:
         - name: "verycoolapi"
